@@ -1,0 +1,89 @@
+.hero {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image:
+        /* top, transparent red */
+        linear-gradient(rgba(49, 63, 134, 0.3)),
+        /* your image */
+        url(../img/bg-md.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $xlcolor;
+    text-align: center;
+    font-family: $sfont;
+
+    &::before {
+        content: '';
+        border-left: 15px solid transparent;
+        border-bottom: 15px solid white;
+        border-right: 15px solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &-head {
+        &--image {
+            display: block;
+            margin: 0 auto;
+            padding: 50px 0;
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        &--name {
+            letter-spacing: 3px;
+            font-size: 1.7rem;
+        }
+
+        &--para {
+            color: $xlcolor;
+            padding: 10px 0 20px 0;
+            font-size: 1.2rem;
+        }
+    }
+
+    &-sections {
+        &--list {
+            padding-left: unset;
+
+            &-li {
+                padding-bottom: 12px;
+                padding-left: unset;
+
+                &.active,
+                &:hover {
+                    font-weight: 900;
+
+                    &::before {
+                        content: '» ';
+                    }
+                }
+            }
+        }
+    }
+
+    &-lang {
+        padding: 30px 0;
+
+        &-eng,
+        &-rus {
+            display: inline-block;
+            height: 50px;
+            background-image: url(../img/united-kingdom.png);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            padding: 0 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        &-rus {
+            background-image: url(../img/russia.png);
+        }
+    }
+}

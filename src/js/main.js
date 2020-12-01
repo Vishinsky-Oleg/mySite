@@ -37,37 +37,53 @@ async function fillThePage(json) {
 }
 
 function fillAside(jFile) {
-    let name = createElement('h1', jFile.name, '.hero-head--name');
-    let occupation = createElement('p', jFile.occupation, '.hero-head--para');
+    let name = createElement('h1', jFile.name, 'hero-head--name');
+    let occupation = createElement('p', jFile.occupation, 'hero-head--para');
     heroHead.appendChild(name);
     heroHead.appendChild(occupation);
-    let sectionsList = createElement('ul', '', '.hero-sections--list');
+    let sectionsList = createElement('ul', '', 'hero-sections--list');
     for (let m = 0; m < jFile.menu[0].length; ++m) {
-        let sectionsListItem = createElement('ul', '', '.hero-sections--list-li');
-        let instance = createElement('a', jFile.menu[0][m], '.hero-sections--list-link', 'href', jFile.menu[1][m]);
+        let sectionsListItem = addActiveClass(m);
+        let instance = createElement('a', jFile.menu[0][m], 'hero-sections--list-link', 'href', jFile.menu[1][m]);
         sectionsListItem.appendChild(instance);
         sectionsList.appendChild(sectionsListItem);
     }
     heroSections.appendChild(sectionsList);
 }
 
+function addActiveClass(index) {
+    if (location.pathname === '/' && index === 0) {
+        return createElement('ul', '', ['hero-sections--list-li', 'active']);
+    } else if (location.pathname === '/contacts.html' && index === 2) {
+        return createElement('ul', '', ['hero-sections--list-li', 'active']);
+    } else if (location.pathname === '/skills.html' && index === 1) {
+        return createElement('ul', '', ['hero-sections--list-li', 'active']);
+    } else {
+        return createElement('ul', '', 'hero-sections--list-li');
+    }
+}
+
 function fillProjects(jFile) {
     for (let p in jFile.projects) {
         let elements = [];
+        let elementsTwoCols = [];
         let itemWrapper = createElement('div', '', 'projects-item-wrapper');
+        let twoColumns = createElement('div', '', 'divide');
+        let headingWrapper = createElement('div', '', 'projects-item-heading');
         let project = jFile.projects[p];
-        elements.push(createElement('span', '#' + p + ' ', 'projects-item-number'));
-        elements.push(createElement('h2', project.name, 'projects-item-name'));
+        headingWrapper.appendChild(createElement('span', '#' + p + ' ', 'projects-item-heading-number'));
+        headingWrapper.appendChild(createElement('h2', project.name, 'projects-item-heading-name'));
+        elements.push(headingWrapper);
         elements.push(createElement('p', project.about, 'projects-item-about'));
         elements.push(createElement('img', '', 'projects-item-image', ['src', 'alt'], ['./dist/img/' + project.imageName, project.name]));
         for (s in project.sections) {
             if (s !== '0') {
-                elements.push(createElement('h3', project.sections[s], 'projects-item-article'));
+                elementsTwoCols.push(createElement('h3', project.sections[s], 'projects-item-article'));
             }
             if (s === '0') {
+                let linksOuterWrapper = createElement('div', '', 'projects-item-links-wrapper');
                 let linksWrapper = createElement('div', '', 'projects-item-links');
-                let linksHeading = createElement('h3', project.sections[s], 'projects-item-links--heading')
-                linksWrapper.appendChild(linksHeading);
+                linksOuterWrapper.appendChild(createElement('h3', project.sections[s], 'projects-item-links-head'));
                 for (l in project.links) {
                     let info = createElement('span', project.links[l][0], 'projects-item-links--info');
                     let link = createElement('a', '', 'projects-item-links--link', ['href', 'target'], [project.links[l][2], '_blank']);
@@ -87,32 +103,39 @@ function fillProjects(jFile) {
                     linksWrapper.appendChild(info);
                     linksWrapper.appendChild(link);
                 }
-                elements.push(linksWrapper);
+                linksOuterWrapper.appendChild(linksWrapper);
+                elements.push(linksOuterWrapper);
             } else if (s === '1') {
+                let techContainer = createElement('div', '', 'projects-item-tech-container');
                 for (t in project.techUsed) {
-                    let singleTech = createElement('span', project.techUsed[t], 'projects-item-tech');
+                    let singleTech = createElement('span', project.techUsed[t], 'projects-item-tech-item');
                     singleTech.style.background = project.techColors[t];
-                    elements.push(singleTech);
+                    techContainer.appendChild(singleTech);
                 }
+                elementsTwoCols.push(techContainer);
             } else if (s === '2') {
-                elements.push(createElement('p', project.implemented, 'projects-item-implemented'));
+                elementsTwoCols.push(createElement('p', project.implemented, 'projects-item-implemented'));
             } else if (s === '3') {
                 let skillList = createElement('ul', '', 'projects-item-skill--list');
                 for (t in project.skills) {
                     skillList.appendChild(createElement('li', project.skills[t], 'projects-item-skill--item'))
                 }
-                elements.push(skillList);
+                elementsTwoCols.push(skillList);
             } else if (s === '4') {
                 let skillList = createElement('ul', '', 'projects-item-lib--list');
                 for (t in project.libs) {
                     skillList.appendChild(createElement('li', project.libs[t], 'projects-item-lib--item'))
                 }
-                elements.push(skillList);
+                elementsTwoCols.push(skillList);
             }
         }
         for (e of elements) {
             itemWrapper.appendChild(e);
         }
+        for (e of elementsTwoCols) {
+            twoColumns.appendChild(e);
+        }
+        itemWrapper.appendChild(twoColumns);
         projects.appendChild(itemWrapper);
     }
 }
@@ -120,6 +143,7 @@ function fillProjects(jFile) {
 function fillContacts(jFile) {
     let elements = [];
     let contacts = jFile.contacts;
+    elements.push(createElement('h1', jFile.other[0], 'contacts-heading'));
     for (c in contacts) {
         let para = createElement('p', '', 'contacts-data', );
         let strong = createElement('strong', contacts[c][0], 'contacts-strong');
@@ -141,29 +165,14 @@ function fillContacts(jFile) {
 function fillSkills(jFile) {
     let elements = [];
     let skills = jFile.mySkills;
+    elements.push(createElement('h1', jFile.other[1], 'contacts-heading'));
     for (c in skills) {
-        let para = createElement('p', '', 'contacts-data', );
+        let para = createElement('p', '', 'skills-data', );
         let strong = createElement('strong', skills[c][0], 'skills-strong');
-        // console.log(skills[c].length);
         para.appendChild(strong);
         para.innerHTML += skills[c][1];
         elements.push(para);
-
-        // console.log(skills[c][1]);
-        // para.appendChild(strong);
-        // if (skills[c].length === 2) {
-        //     para.innerHTML += skills[c][1];
-        //     elements.push(para);
-        // } else {
-        //     let link = createElement('a', skills[c][1], 'skills-data', ['href', 'target'], [skills[c][2], '_blank']);
-        //     para.appendChild(link);
-        //     elements.push(para);
-
-        // }
-        // console.log(skills[c]);
-        // console.log(skills[c][0])
     }
-    // console.log(skills[1]);
     for (e of elements) {
         skillsC.appendChild(e);
     }

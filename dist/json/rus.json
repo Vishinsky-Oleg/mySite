@@ -8,35 +8,35 @@
     "projects": {
         "1": {
             "name": "Superdrone",
-            "about": "Магазин Дронов сверстаный по PSD макету",
+            "about": "Магазин Дронов сверстанный по PSD макету",
             "imageName": "project1.jpg",
-            "sections": ["Технолигии использованы", "Что было реализовано", "Набор навыков", "Библиотеки"],
+            "sections": ["Ссылки", "Технолигии использованы", "Что было реализовано", "Набор навыков", "Библиотеки"],
             "links": [
                 ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Taicco-s-P-2"],
                 ["Изображение", "image-outline", "./dist/img/taiccos.jpg"],
-                ["Ссылка на сайт", "link-outline", "https://mail.ru/"]
+                ["Ссылка", "link-outline", "https://mail.ru/"]
             ],
             "techUsed": ["HTML5", "CSS3", "JS", "Gulp", "SASS", "FlexBox", "Git/GitHub", "BootStrap", "Chrome DEV Tools"],
             "techColors": ["#E44D26", "#1A6FB4", "#EFD81D", "#CF4D4D", "#DCA6C0", "#6ECFAE", "#E84D31", "#6C419D", "#65A757"],
             "implemented": "Верстка была произведена по PSD макету (Не моему). На странице присутсвуют несколько анимированных элементов и кастомный контроль видео элемента (>992px). Дизайн проигрывается реализован не в лучшей форме, но на это не был сделан упор в данном конкретном случае. Кнопка воспроизведения окружена двумя <svg> кольцами, которые анимированы с помоцию <animate> тэга. Разметка была протестирована в разных браузерах и разрешених экрана. Отзывчивость к размеру в изображениях реализована с помощью аттрубутов тэга <img>. Присутсвуют два раздела с разными слайдерами. В одном из разделом был использован фунционал метода fetch().",
-            "skills": ["Vanilla JS", "SVG/animation", "CSS animations", "Mobile First", "Adaptive layout(CSS), images(HTML5)", "Crossbrowser layout", "HTMLMediaElement API", "Fetching from JSON file", "Bootstrap: Grid, Slider", "Vendor JS library", "BEM"],
+            "skills": ["Vanilla JS", "SVG/animation", "CSS animations", "Mobile First", "Адаптивная верстка(CSS), images(HTML5)", "Кросс-браузерная верстка", "HTMLMediaElement API", "Fetching from JSON file", "Bootstrap: Grid, Slider", "Сторонние JS library", "BEM"],
             "libs": ["Bootstrap 4.5", "SlickSlider"]
         },
         "2": {
             "name": "Taicco's",
-            "about": "Taicco's restaurant layout & order system",
+            "about": "Taicco's ресторан разметка и система заказа",
             "imageName": "project2.jpg",
-            "sections": ["Technologies used", "What was implemented", "Skill Set", "Libraries used"],
+            "sections": ["Ссылки", "Технолигии использованы", "Что было реализовано", "Набор навыков", "Библиотеки"],
             "links": [
                 ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Superdrone-P-1"],
                 ["PSD макет", "ps.png", "./dist/img/black.psd"],
                 ["Изображение", "image-outline", "./dist/img/black.jpg"],
-                ["Ссылка на сайт", "link-outline", "https://mail.ru/"]
+                ["Ссылка", "link-outline", "https://mail.ru/"]
             ],
             "techUsed": ["HTML5", "CSS3", "JS", "Gulp", "SASS", "Git/GitHub", "BootStrap", "Chrome DEV Tools"],
             "techColors": ["#E44D26", "#1A6FB4", "#EFD81D", "#CF4D4D", "#DCA6C0", "#E84D31", "#6C419D", "#65A757"],
             "implemented": "Дизайн сайта был вдохновлен изображением с сайта Pinterest. Основной акцент был сделан на систему заказа, с целью демонстрации навыком работы с объектами, массивами и строками. Наполнение контентом начинается с создания подходящих HTML элементов и классов, затем текстовое содержание наполняется благодаря async/await функции использующей fetch() метод из файла JSON и завершается все прикреплением элементов к готовому контейнеру. Система заказа базируется на LocalStorage API. Каждая добавленная позиция имеет id, который пополняет строку order принадлежащую LocalStorage, кнопки плюс и минус позволяют пользователю выбрать определённое количество, которое в будущем дополняет id. На странице Order, функция фильтрует и трансформирует строку order в объект и добавляет позиции в контейнер с количеством и кратким описанием. Страница Order позволяет менять количество, удалять позицию или очистить заказ полностью, обновляя LocalStorage.order в реальном времени.",
-            "skills": ["Vanilla JS (Strings, Objects, Array) methods", "CSS animations", "Mobile First", "Adaptive layout(CSS)", "Crossbrowser layout", "LocalStorage API", "Fetching from JSON file", "Bootstrap: Grid", "Vendor JS/CSS libraries"],
+            "skills": ["Vanilla JS (Strings, Objects, Array) methods", "CSS animations", "Mobile First", "Адаптивная верстка(CSS)", "Кросс-браузерная верстка", "LocalStorage API", "Fetching from JSON file", "Bootstrap: Grid", "Сторонние JS/CSS libraries"],
             "libs": ["Bootstrap 4.5 (Only Grid)", "WOW.js", "Animate CSS"]
         }
     },
@@ -53,7 +53,9 @@
         ["E-Mail: ", "vishinsky.oleg@gmail.com"],
         ["GitHub: ", "Ссылка  »", "https://github.com/Vishinsky-Oleg"],
         ["Проверка уровня Английского: ", "Ссылка  »", "https://www.notion.so/9641f0555b0e4cbb93b33f349d795d09?v=5535c840f45a4afb804358603eb3235b"],
-        ["HeadHunter: ", "Ссылка  »", "https://hh.ru/resume/b6dc1449ff03c75eed0039ed1f594e744b6c51"],
+        ["HeadHunter DEV: ", "Ссылка  »", "https://hh.ru/resume/b6dc1449ff03c75eed0039ed1f594e744b6c51"],
+        ["HeadHunter Др.: ", "Ссылка »;", "https://hh.ru/resume/b6dc1449ff03c75eed0039ed1f594e744b6c51"],
         ["CodeWars: ", "Ссылка  »", "https://www.codewars.com/users/xPyPnRxyN"]
-    ]
+    ],
+    "other": ["Контакты и ссылки", "Навыки"]
 }

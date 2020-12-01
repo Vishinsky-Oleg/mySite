@@ -1,0 +1,22 @@
+.skills, .contacts {
+    &-container {
+        padding: 20px;
+    }
+
+    &-heading {
+        padding: 30px;
+        font-size: 1.9rem;
+        color: $dcolor;
+    }
+
+    &-data {
+        padding: 10px 0;
+    }
+}
+
+.contacts-container {
+    text-align: center;
+    & a {
+        text-decoration: underline;
+    }
+}

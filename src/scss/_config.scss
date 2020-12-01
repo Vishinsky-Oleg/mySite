@@ -1,8 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 $xdcolor: #1c1642;
 $dcolor: #313f86;
@@ -33,3 +29,14 @@ Cantarell,
 'Open Sans',
 'Helvetica Neue',
 sans-serif;
+
+* {
+    &::selection {
+        color: $xlcolor;
+        background: $xdcolor ;
+    }
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
