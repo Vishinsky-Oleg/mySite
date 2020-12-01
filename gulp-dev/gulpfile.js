@@ -6,37 +6,48 @@ const gulp = require("gulp"),
     cleanCSS = require("gulp-clean-css"),
     sourcemaps = require("gulp-sourcemaps"),
     concat = require("gulp-concat"),
-    uglify = require("gulp-uglify"),
+    uglify = require("gulp-uglify-es").default,
+    // imagemin = require("gulp-imagemin"),
+    // changed = require("gulp-changed"),
     lineec = require("gulp-line-ending-corrector");
 
 const root = "../"; //Root folder
-const scss = root + "src/sass/", //Folder with scss files
+const scss = root + "src/scss/", //Folder with scss files
     js = root + "src/js/", //folder with js files
-    vendor = js + "vendor/", //JS vendors
+    vendor = js + "vendor/",
     jsdist = root + "dist/js/", //folder to place minified version of js
-    cssdist = root + "dist/css/"; //folder for final css file
+    cssdist = root + "dist/css/";
 
-const twigWatchFiles = root + "**/*.twig", //Files that is gonna be changed
-    styleWatchFiles = scss + "**/*.sass"; //if scss is changed
+const mainWatchFiles = root + "**/*.html",
+    jsWatchFiles = root + "src/js/**/*.js", //Files that is gonna be changed
+    styleWatchFiles = scss + "**/*.scss"; //if scss is changed
 
 const jsSRC = [
     //order in which js files will be processed
-    js + "main.js",
-    vendor + "jquery-2.1.1.min.js",
-    vendor + "bootstrap.js",
-    vendor + "jquery.magnific-popup.min.js",
+    // vendor + "jquery-3.5.1.slim.min.js",
+    // vendor + "bootstrap.bundle.min.js",
+    // vendor + "wow.min.js",
+    js + "main.js"
 ];
 
 const cssSRC = [
-    //order in which css files will be processed
-    root + "src/css/vendor/bootstrap.css", //css vendors
-    root + "src/css/style.css", //compiled sass
+    //order in which cs files will be processed
+    // root + "src/css/vendor/slick.css",
+    // root + "src/css/vendor/bootstrap-grid.css",
+    // root + "src/css/vendor/animate.css",
+    root + "src/css/style.css" //compiled
 ];
+
+const imgSRC = root + 'src/image/*',
+    imgDist = root + 'dist/image';
+
 
 function css() {
     return gulp
-        .src([scss + "style.sass"]) //sass file to compile
-        .pipe(sourcemaps.init({ loadMaps: true }))
+        .src([scss + "style.scss"])
+        .pipe(sourcemaps.init({
+            loadMaps: true
+        }))
         .pipe(
             sass({
                 outputStyle: "expanded",
@@ -45,49 +56,71 @@ function css() {
         .pipe(autoprefixer("last 2 versions"))
         .pipe(sourcemaps.write())
         .pipe(lineec())
-        .pipe(gulp.dest(root + "src/css/")); //compiled sass goes into
+        .pipe(gulp.dest(root + "src/css/"));
 }
 
 function concatCSS() {
     return gulp
-        .src(cssSRC) //array with all css files with particular order
-        .pipe(sourcemaps.init({ loadMaps: true, largeFile: true }))
-        .pipe(concat("style.min.css")) //name of minified final css file
+        .src(cssSRC)
+        .pipe(sourcemaps.init({
+            loadMaps: true,
+            largeFile: true
+        }))
+        .pipe(concat("style.min.css"))
         .pipe(cleanCSS())
-        .pipe(sourcemaps.write("./")) //css maps gonna go in the same folder as final file
+        .pipe(sourcemaps.write("./"))
         .pipe(lineec())
-        .pipe(gulp.dest(cssdist)); //destination of final minified version
+        .pipe(gulp.dest(cssdist));
 }
 
 function javascript() {
     return gulp
-        .src(jsSRC) //minify array of js files ordered in particular maner
+        .src(jsSRC)
         .pipe(concat("main.js"))
         .pipe(uglify())
+        .pipe(sourcemaps.write())
         .pipe(lineec())
-        .pipe(gulp.dest(jsdist)); //destination for final minified js script
+        .pipe(gulp.dest(jsdist));
+}
+
+function imgmin() {
+    return gulp
+        .src(imgSRC)
+        .pipe(changed(imgDist))
+        .pipe(imagemin([
+            imagemin.gifsicle({
+                interlaced: true
+            }),
+            imagemin.mozjpeg({
+                progressive: true
+            }),
+            imagemin.optipng({
+                optimizationLevel: 5
+            })
+        ]))
+        .pipe(gulp.dest(imgDist));
 }
 
 function watch() {
     browserSync.init({
         server: {
-            baseDir: root, //base directory to run localhost
+            baseDir: root,
         },
     });
     gulp.watch(styleWatchFiles, gulp.series([css, concatCSS]));
     gulp.watch(jsSRC, javascript);
-    gulp.watch([jsdist + "main.js", cssdist + "style.min.css"]).on(
+    // gulp.watch(imgSRC, imgmin);
+    gulp.watch([jsWatchFiles, styleWatchFiles, mainWatchFiles]).on(
         "change",
         browserSync.reload
     );
 }
-//exporting functions
+
 exports.css = css;
 exports.concatCSS = concatCSS;
 exports.javascript = javascript;
+// exports.imgmin = imgmin;
 exports.watch = watch;
 
 const build = gulp.parallel(watch);
 gulp.task("default", build);
-
-/////CHANGE SASS TO SCSS if needed

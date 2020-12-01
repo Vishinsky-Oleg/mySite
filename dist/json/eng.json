@@ -1,15 +1,23 @@
 {
     "name": "OLEG VISHINSKY",
     "occupation": "FRONT-END DEVELOPER",
-    "menu": ["Portfolio", "My skills", "Contacts & Links"],
+    "menu": [
+        ["Portfolio", "My skills", "Contacts & Links"],
+        ["./", "./skills.html", "./contacts.html"]
+    ],
     "projects": {
         "1": {
             "name": "Superdrone",
             "about": "Drone shop layout from PSD template",
             "imageName": "project1.jpg",
             "sections": ["Technologies used", "What was implemented", "Skill Set", "Libraries"],
+            "links": [
+                ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Taicco-s-P-2"],
+                ["Image", "image-outline", "./dist/img/taiccos.jpg"],
+                ["Link to website", "link-outline", "https://mail.ru/"]
+            ],
             "techUsed": ["HTML5", "CSS3", "JS", "Gulp", "SASS", "FlexBox", "Git/GitHub", "BootStrap", "Chrome DEV Tools"],
-            "techColors": ["#E44D26", "#1A6FB4", "#000000", "#CF4D4D", "#DCA6C0", "#6ECFAE", "#E84D31", "#6C419D", "#EDF0EE"],
+            "techColors": ["#E44D26", "#1A6FB4", "#EFD81D", "#CF4D4D", "#DCA6C0", "#6ECFAE", "#E84D31", "#6C419D", "#65A757"],
             "implemented": "This project's layout has been built by PSD template (Not mine). There is a few animated elements and custom video player (>992px). Design of player it self left a lot to be desired, but it wasn't crucial goal in this particular case. Play button on each video is surrounded by <svg> circles, animated by HTML5 <animate> tag. Layout is cross browser compatible and responsive to resolution. Images are responsive by HTML5 <img> attributes. Two sections using different sliders. In one section items has been fetched from JSON file.",
             "skills": ["Vanilla JS", "SVG/animation", "CSS animations", "Mobile First", "Adaptive layout(CSS), images(HTML5)", "Crossbrowser layout", "HTMLMediaElement API", "Fetching from JSON file", "Bootstrap: Grid, Slider", "Vendor JS library", "BEM"],
             "libs": ["Bootstrap 4.5", "SlickSlider"]
@@ -18,21 +26,34 @@
             "name": "Taicco's",
             "about": "Taicco's restaurant layout & order system",
             "imageName": "project2.jpg",
-            "sections": ["Technologies used", "What was implemented", "Skill Set", "Libraries used"],
+            "sections": ["Links", "Technologies used", "What was implemented", "Skill Set", "Libraries used"],
+            "links": [
+                ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Superdrone-P-1"],
+                ["PSD template", "ps.png", "./dist/img/black.psd"],
+                ["Image", "image-outline", "./dist/img/black.jpg"],
+                ["Link to website", "link-outline", "https://mail.ru/"]
+            ],
             "techUsed": ["HTML5", "CSS3", "JS", "Gulp", "SASS", "Git/GitHub", "BootStrap", "Chrome DEV Tools"],
-            "techColors": ["#E44D26", "#1A6FB4", "#000000", "#CF4D4D", "#DCA6C0", "#E84D31", "#6C419D", "#EDF0EE"],
+            "techColors": ["#E44D26", "#1A6FB4", "#EFD81D", "#CF4D4D", "#DCA6C0", "#E84D31", "#6C419D", "#65A757"],
             "implemented": "Layout design was inspired by image from Pinterest. Main accent was on order system to show my skills in handling objects, strings and arrays. Content filling starts by creating suitable elements, classes and functionality if needed, continues with adding text content by async/await function which fetching data from JSON file, and finished by appending to container. Order system based on LocalStorage API. Each added item id appends to LocalStorage string property called order, plus and minus button allows user to pick specific amount which appends to id. In \"Order\" page, function filtering and transforming string to object and appending items to container with quantity and some information. Order page allows user to change amount, delete item or delete everything at once, LocalStorage.order updating accordingly at the same time.",
             "skills": ["Vanilla JS (Strings, Objects, Array) methods", "CSS animations", "Mobile First", "Adaptive layout(CSS)", "Crossbrowser layout", "LocalStorage API", "Fetching from JSON file", "Bootstrap: Grid", "Vendor JS/CSS libraries"],
             "libs": ["Bootstrap 4.5 (Only Grid)", "WOW.js", "Animate CSS"]
         }
     },
     "mySkills": [
-        ["JS: ", "CSS: ", "HTML: ", "Other: ", "To a lesser extent", "Basic knowledge"],
-        ["Including ES6 syntax, RESTFul API, Promises (async/await); Array, Object, String, Integer.prototype methods", "Animations, 2D transform, 3D transform, transitions; Crossbrowser/Adaptive layout, Pseudo Elements & Classes, @mediaqueries, webFonts, Flexbox, Grid", "Proper tagging, forms, svg, video/audio, responsive images", "High english level (enough for reading professional literature and documentation, like MDN or W3School), Bootstap, Gulp, Sass (incl: functions, iterators, mixins and variables), Parcel (replacement for gulp in smaller project), BEM naming convention, working with vendor JS and Css libraries, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (for small deploys)", "PhotoShop, Adobe Xd, Figma", "PHP, Python, SQL, OpenCart CMS"]
+        ["JS: ", "Including ES6 syntax, RESTFul API, Promises (async/await); Array, Object, String, Integer.prototype methods"],
+        ["CSS: ", "Animations, 2D transform, 3D transform, transitions; Crossbrowser/Adaptive layout, Pseudo Elements & Classes, @mediaqueries, webFonts, Flexbox, Grid"],
+        ["HTML: ", "Proper tagging, forms, svg, video/audio, responsive images"],
+        ["Other: ", "High english level (enough for reading professional literature and documentation, like MDN or W3School), Bootstap, Gulp, Sass (incl: functions, iterators, mixins and variables), Parcel (replacement for gulp in smaller project), BEM naming convention, working with vendor JS and Css libraries, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (for small deploys)"],
+        ["To a lesser extent: ", "PhotoShop, Adobe Xd, Figma"],
+        ["Basic knowledge: ", "PHP, Python, SQL, OpenCart CMS"]
     ],
     "contacts": [
-        ["Phone number: ", "E-Mail: ", "GitHub", "Homemade English evaluation: ", "HeadHunter: ", "CodeWars: "],
-        ["+7 (926) 151-8353", "vishinsky.oleg@gmail.com", "Link &raquo;", "Link &raquo;", "Link &raquo;", "Link &raquo;"],
-        ["https://github.com/Vishinsky-Oleg", "https://www.notion.so/9641f0555b0e4cbb93b33f349d795d09?v=5535c840f45a4afb804358603eb3235b", "https://hh.ru/resume/b6dc1449ff03c75eed0039ed1f594e744b6c51", "https://www.codewars.com/users/xPyPnRxyN"]
+        ["Phone number: ", "+7 (926) 151-8353"],
+        ["E-Mail: ", "vishinsky.oleg@gmail.com"],
+        ["GitHub: ", "Link »", "https://github.com/Vishinsky-Oleg"],
+        ["Homemade English evaluation: ", "Link »;", "https://www.notion.so/9641f0555b0e4cbb93b33f349d795d09?v=5535c840f45a4afb804358603eb3235b"],
+        ["HeadHunter: ", "Link »;", "https://hh.ru/resume/b6dc1449ff03c75eed0039ed1f594e744b6c51"],
+        ["CodeWars: ", "Link »;", "https://www.codewars.com/users/xPyPnRxyN"]
     ]
 }
