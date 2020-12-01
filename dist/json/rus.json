@@ -12,9 +12,11 @@
             "imageName": "project1.jpg",
             "sections": ["Ссылки", "Технолигии использованы", "Что было реализовано", "Набор навыков", "Библиотеки"],
             "links": [
-                ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Taicco-s-P-2"],
-                ["Изображение", "image-outline", "./dist/img/taiccos.jpg"],
-                ["Ссылка", "link-outline", "https://mail.ru/"]
+                ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Superdrone-P-1"],
+                ["PSD макет", "ps.png", "./dist/img/black.psd"],
+                ["Изображение", "image-outline", "./dist/img/black.jpg"],
+                ["Ссылка", "link-outline", "http://superdrone.vishinsky-oleg.ru/"]
+
             ],
             "techUsed": ["HTML5", "CSS3", "JS", "Gulp", "SASS", "FlexBox", "Git/GitHub", "BootStrap", "Chrome DEV Tools"],
             "techColors": ["#E44D26", "#1A6FB4", "#EFD81D", "#CF4D4D", "#DCA6C0", "#6ECFAE", "#E84D31", "#6C419D", "#65A757"],
@@ -28,10 +30,9 @@
             "imageName": "project2.jpg",
             "sections": ["Ссылки", "Технолигии использованы", "Что было реализовано", "Набор навыков", "Библиотеки"],
             "links": [
-                ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Superdrone-P-1"],
-                ["PSD макет", "ps.png", "./dist/img/black.psd"],
-                ["Изображение", "image-outline", "./dist/img/black.jpg"],
-                ["Ссылка", "link-outline", "https://mail.ru/"]
+                ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Taicco-s-P-2"],
+                ["Изображение", "image-outline", "./dist/img/taiccos.jpg"],
+                ["Ссылка", "link-outline", "http://taiccos.vishinsky-oleg.ru/"]
             ],
             "techUsed": ["HTML5", "CSS3", "JS", "Gulp", "SASS", "Git/GitHub", "BootStrap", "Chrome DEV Tools"],
             "techColors": ["#E44D26", "#1A6FB4", "#EFD81D", "#CF4D4D", "#DCA6C0", "#E84D31", "#6C419D", "#65A757"],

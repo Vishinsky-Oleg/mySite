@@ -15,7 +15,7 @@
                 ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Superdrone-P-1"],
                 ["PSD template", "ps.png", "./dist/img/black.psd"],
                 ["Image", "image-outline", "./dist/img/black.jpg"],
-                ["Link", "link-outline", "https://mail.ru/"]
+                ["Link", "link-outline", "http://superdrone.vishinsky-oleg.ru/"]
             ],
             "techUsed": ["HTML5", "CSS3", "JS", "Gulp", "SASS", "FlexBox", "Git/GitHub", "BootStrap", "Chrome DEV Tools"],
             "techColors": ["#E44D26", "#1A6FB4", "#EFD81D", "#CF4D4D", "#DCA6C0", "#6ECFAE", "#E84D31", "#6C419D", "#65A757"],
@@ -31,8 +31,7 @@
             "links": [
                 ["GitHub", "logo-github", "https://github.com/Vishinsky-Oleg/Taicco-s-P-2"],
                 ["Image", "image-outline", "./dist/img/taiccos.jpg"],
-                ["Link", "link-outline", "https://mail.ru/"]
-
+                ["Link", "link-outline", "http://taiccos.vishinsky-oleg.ru/"]
             ],
             "techUsed": ["HTML5", "CSS3", "JS", "Gulp", "SASS", "Git/GitHub", "BootStrap", "Chrome DEV Tools"],
             "techColors": ["#E44D26", "#1A6FB4", "#EFD81D", "#CF4D4D", "#DCA6C0", "#E84D31", "#6C419D", "#65A757"],
