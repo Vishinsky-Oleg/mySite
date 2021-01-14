@@ -42,12 +42,13 @@
         }
     },
     "mySkills": [
-        ["JS: ", "Включая ES6 ситакс, RESTFul API, Promises (async/await); Array, Object, String, Integer.prototype методы"],
+        ["JS: ", "Включая ES6 синтаксис, RESTFul API, Promises (async/await); Array, Object, String, Integer.prototype методы"],
         ["CSS: ", "Animations, 2D transform, 3D transform, transitions; Кроссбраузерная/Адаптивная верстка, Pseudo Elements & Classes, @mediaqueries, webFonts, Flexbox, Grid"],
         ["HTML: ", "Надлежащее использование тэгов, forms, svg, video/audio, responsive images"],
-        ["Другие: ", "Высоский уровень владения Английским (Достаточный для чтения профессиональной литературы и документации, таких ресурсов как MDN или W3School), Bootstap, Gulp, Sass (включая: functions, iterators, mixins and variables), Parcel (замена для gulp в меньших проектах), BEM именная методология, работа со сторонними библиотекаи JS и Css, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (для незначительных проектов)"],
+        ["Другие: ", "Высоский уровень владения Английским (Достаточный для чтения профессиональной литературы и документации, таких ресурсов как MDN или W3School), Bootstap, Gulp, Webpack, Sass (включая: functions, iterators, mixins and variables), Parcel (замена для gulp в меньших проектах), BEM именная методология, работа со сторонними библиотекаи JS и Css, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (для незначительных проектов)"],
         ["В меньшей степени: ", "PhotoShop, Adobe Xd, Figma"],
-        ["Базовые знания: ", "PHP, Python, SQL, OpenCart CMS"]
+        ["Базовые знания: ", "PHP, Python, SQL, OpenCart CMS"],
+        ["На данный момент изучаю: ", "React, Redux, Typescript"]
     ],
     "contacts": [
         ["Телефон: ", "+7 (926) 151-8353"],

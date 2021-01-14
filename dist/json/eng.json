@@ -44,10 +44,10 @@
         ["JS: ", "Including ES6 syntax, RESTFul API, Promises (async/await); Array, Object, String, Integer.prototype methods"],
         ["CSS: ", "Animations, 2D transform, 3D transform, transitions; Crossbrowser/Adaptive layout, Pseudo Elements & Classes, @mediaqueries, webFonts, Flexbox, Grid"],
         ["HTML: ", "Proper tagging, forms, svg, video/audio, responsive images"],
-        ["Other: ", "High english level (enough for reading professional literature and documentation, like MDN or W3School), Bootstap, Gulp, Sass (incl: functions, iterators, mixins and variables), Parcel (replacement for gulp in smaller project), BEM naming convention, working with vendor JS and Css libraries, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (for small deploys)"],
+        ["Other: ", "High english level (enough for reading professional literature and documentation, like MDN or W3School), Bootstap, Gulp, Webpack,  Sass (incl: functions, iterators, mixins and variables), Parcel (replacement for gulp in smaller project), BEM naming convention, working with vendor JS and Css libraries, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (for small deploys)"],
         ["To a lesser extent: ", "PhotoShop, Adobe Xd, Figma"],
         ["Basic knowledge: ", "PHP, Python, SQL, OpenCart CMS"],
-        ["Currently learning: ", "React"]
+        ["Currently learning: ", "React, Redux, Typescript"]
     ],
     "contacts": [
         ["Phone number: ", "+7 (926) 151-8353"],
