@@ -8,14 +8,14 @@
     "projects": {
         "1": {
             "name": "Superdrone",
-            "about": "React ToDo application",
+            "about": "React ToDo приложение",
             "imageName": "react.png",
             "sections": [
-                "Links",
-                "Technologies used",
-                "What was implemented",
-                "Skill Set",
-                "Libraries and frameworks"
+                "Ссылки",
+                "Технолигии использованы",
+                "Что было реализовано",
+                "Набор навыков",
+                "Библиотеки"
             ],
             "links": [
                 [
