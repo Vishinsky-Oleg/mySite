@@ -7,8 +7,8 @@
     ],
     "projects": {
         "1": {
-            "name": "Superdrone",
-            "about": "React ToDo приложение",
+            "name": "'TODO' приложение",
+            "about": "React/Firebase ToDo приложение",
             "imageName": "react.png",
             "sections": [
                 "Ссылки",
