@@ -76,7 +76,7 @@ function fillProjects(jFile) {
         elements.push(headingWrapper);
         elements.push(createElement('p', project.about, 'projects-item-about'));
         elements.push(createElement('img', '', 'projects-item-image', ['src', 'alt'], ['./dist/img/' + project.imageName, project.name]));
-        for (s in project.sections) {
+        for (let s in project.sections) {
             if (s !== '0') {
                 elementsTwoCols.push(createElement('h3', project.sections[s], 'projects-item-article'));
             }
@@ -84,7 +84,7 @@ function fillProjects(jFile) {
                 let linksOuterWrapper = createElement('div', '', 'projects-item-links-wrapper');
                 let linksWrapper = createElement('div', '', 'projects-item-links');
                 linksOuterWrapper.appendChild(createElement('h3', project.sections[s], 'projects-item-links-head'));
-                for (l in project.links) {
+                for (let l in project.links) {
                     let info = createElement('span', project.links[l][0], 'projects-item-links--info');
                     let link = createElement('a', '', 'projects-item-links--link', ['href', 'target'], [project.links[l][2], '_blank']);
                     if (project.links.length === 4) {
@@ -107,7 +107,7 @@ function fillProjects(jFile) {
                 elements.push(linksOuterWrapper);
             } else if (s === '1') {
                 let techContainer = createElement('div', '', 'projects-item-tech-container');
-                for (t in project.techUsed) {
+                for (let t in project.techUsed) {
                     let singleTech = createElement('span', project.techUsed[t], 'projects-item-tech-item');
                     singleTech.style.background = project.techColors[t];
                     techContainer.appendChild(singleTech);
@@ -117,22 +117,22 @@ function fillProjects(jFile) {
                 elementsTwoCols.push(createElement('p', project.implemented, 'projects-item-implemented'));
             } else if (s === '3') {
                 let skillList = createElement('ul', '', 'projects-item-skill--list');
-                for (t in project.skills) {
+                for (let t in project.skills) {
                     skillList.appendChild(createElement('li', project.skills[t], 'projects-item-skill--item'))
                 }
                 elementsTwoCols.push(skillList);
             } else if (s === '4') {
                 let skillList = createElement('ul', '', 'projects-item-lib--list');
-                for (t in project.libs) {
+                for (let t in project.libs) {
                     skillList.appendChild(createElement('li', project.libs[t], 'projects-item-lib--item'))
                 }
                 elementsTwoCols.push(skillList);
             }
         }
-        for (e of elements) {
+        for (let e of elements) {
             itemWrapper.appendChild(e);
         }
-        for (e of elementsTwoCols) {
+        for (let e of elementsTwoCols) {
             twoColumns.appendChild(e);
         }
         itemWrapper.appendChild(twoColumns);
@@ -144,7 +144,7 @@ function fillContacts(jFile) {
     let elements = [];
     let contacts = jFile.contacts;
     elements.push(createElement('h1', jFile.other[0], 'contacts-heading'));
-    for (c in contacts) {
+    for (let c in contacts) {
         let para = createElement('p', '', 'contacts-data', );
         let strong = createElement('strong', contacts[c][0], 'contacts-strong');
         para.appendChild(strong);
@@ -157,7 +157,7 @@ function fillContacts(jFile) {
             elements.push(para);
         }
     }
-    for (e of elements) {
+    for (let e of elements) {
         contactsC.appendChild(e);
     }
 }
@@ -166,14 +166,14 @@ function fillSkills(jFile) {
     let elements = [];
     let skills = jFile.mySkills;
     elements.push(createElement('h1', jFile.other[1], 'contacts-heading'));
-    for (c in skills) {
+    for (let c in skills) {
         let para = createElement('p', '', 'skills-data', );
         let strong = createElement('strong', skills[c][0], 'skills-strong');
         para.appendChild(strong);
         para.innerHTML += skills[c][1];
         elements.push(para);
     }
-    for (e of elements) {
+    for (let e of elements) {
         skillsC.appendChild(e);
     }
 }
@@ -192,7 +192,7 @@ function createElement(tag, content, classes, attributes, attributesValues) {
     }
     if (attributes && attributesValues) {
         if (Array.isArray(attributes) && Array.isArray(attributesValues)) {
-            for (c = 0; c < attributes.length; ++c) {
+            for (let c = 0; c < attributes.length; ++c) {
                 element.setAttribute(attributes[c], attributesValues[c]);
             }
         } else {
