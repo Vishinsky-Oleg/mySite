@@ -29,9 +29,9 @@ async function fillThePage(json) {
     fillAside(jFile);
     if (location.pathname === '/') {
         fillProjects(jFile);
-    } else if (location.pathname === '/contacts.html') {
+    } else if (location.pathname === '/contacts') {
         fillContacts(jFile);
-    } else if (location.pathname === '/skills.html') {
+    } else if (location.pathname === '/skills') {
         fillSkills(jFile);
     }
 }
@@ -54,9 +54,9 @@ function fillAside(jFile) {
 function addActiveClass(index) {
     if (location.pathname === '/' && index === 0) {
         return createElement('ul', '', ['hero-sections--list-li', 'active']);
-    } else if (location.pathname === '/contacts.html' && index === 2) {
+    } else if (location.pathname === '/contacts' && index === 2) {
         return createElement('ul', '', ['hero-sections--list-li', 'active']);
-    } else if (location.pathname === '/skills.html' && index === 1) {
+    } else if (location.pathname === '/skills' && index === 1) {
         return createElement('ul', '', ['hero-sections--list-li', 'active']);
     } else {
         return createElement('ul', '', 'hero-sections--list-li');
