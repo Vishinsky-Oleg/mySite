@@ -3,7 +3,7 @@
     "occupation": "FRONT-END Разработчик",
     "menu": [
         ["Потфолио", "Мои навыки", "Контакты и ссылки"],
-        ["./", "./skills.html", "./contacts.html"]
+        ["./", "./skills", "./contacts"]
     ],
     "projects": {
         "1": {
