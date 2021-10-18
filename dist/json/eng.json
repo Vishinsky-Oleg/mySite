@@ -9,7 +9,7 @@
 		"1": {
 			"name": "Advanced 'TODO' application",
 			"about": "TS/React/Firebase/RestAPI ToDo application",
-			"imageName": "react.png",
+			"imageName": "p1.png",
 			"sections": [
 				"Links",
 				"Technologies used",
@@ -31,29 +31,38 @@
 				["Link", "link-outline", "https://t-flex--todo.web.app/"]
 			],
 			"techUsed": [
+				"TypeScript",
 				"React",
-				"React-Bootstrap",
-				"JS (ES6)",
+				"Material UI",
+				"JS (ES6+)",
 				"Firebase",
+				"JSON Placeholder",
 				"Git/GitHub",
-				"Chrome DEV Tools"
+				"Chrome DEV Tools",
+				"Create React App"
 			],
 			"techColors": [
 				"#1A6FB4",
+				"#1A6FB4",
 				"#03b7d6",
 				"#EFD81D",
+				"#6ECFAE",
 				"#CF4D4D",
 				"#DCA6C0",
-				"#6ECFAE"
+				"#6ECFAE",
+				"#1A6FB4"
 			],
-			"implemented": "Fully functional ToDo application with authentication system, which capable of signup, restore password via email, and update user profile. Authentication and storage was created on Firebase. Firebase functionality was used through useContext hook. Application was built solely on functional component with hooks. UI made with React-Bootstrap. In development also was used Higher Order Component concept and React-router-dom.",
+			"implemented": "Advanced TODO application written on TypeScript. Fetching 10 users from RestAPI (JSON Placeholder) with images by ID of each user. When user is opened, Todo's are fetched from JSON Placeholder and also from firebase.Todos from firebase can be deleted and edited. Visitor can also create a new todo, which will be saved to firebase by users ID. Website deployed on firebase. Axios is responsible for requests and Material UI for Components UI. Application actively working with link's parameters from React-router-dom",
 			"skills": [
 				"ES6 syntax",
-				"React: Hooks, HOC's, React-Router-Dom, Context"
+				"React: Hooks, React-Router-Dom",
+				"Requests to RestAPI",
+				"TypeScript",
+				"Using vendor library for UI"
 			],
-			"libs": ["react-router-dom", "Firebase", "React-Bootstrap"]
+			"libs": ["react-router-dom", "Firebase", "Material UI", "axios"]
 		},
-		"2": {
+		"4": {
 			"name": "'TODO' application",
 			"about": "React/Firebase ToDo application",
 			"imageName": "react.png",
@@ -99,7 +108,7 @@
 			],
 			"libs": ["react-router-dom", "Firebase", "React-Bootstrap"]
 		},
-		"2": {
+		"5": {
 			"name": "Superdrone",
 			"about": "Drone shop layout from PSD template",
 			"imageName": "project1.jpg",
@@ -156,7 +165,7 @@
 			],
 			"libs": ["Bootstrap 4.5", "SlickSlider"]
 		},
-		"3": {
+		"6": {
 			"name": "Taicco's",
 			"about": "Taicco's restaurant layout & order system",
 			"imageName": "project2.jpg",
