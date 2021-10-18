@@ -9,7 +9,7 @@
 		"1": {
 			"name": "Advanced 'TODO' application",
 			"about": "TS/React/Firebase/RestAPI ToDo application",
-			"imageName": "p1.png",
+			"imageName": "p1.jpg",
 			"sections": [
 				"Links",
 				"Technologies used",
@@ -46,7 +46,7 @@
 				"#1A6FB4",
 				"#03b7d6",
 				"#EFD81D",
-				"#6ECFAE",
+				"#E44D26",
 				"#CF4D4D",
 				"#DCA6C0",
 				"#6ECFAE",
@@ -61,6 +61,47 @@
 				"Using vendor library for UI"
 			],
 			"libs": ["react-router-dom", "Firebase", "Material UI", "axios"]
+		},
+		"2": {
+			"name": "TypeScript Drag and Drop",
+			"about": "TS w/ Vanilla JS",
+			"imageName": "p2.jpg",
+			"sections": [
+				"Links",
+				"Technologies used",
+				"What was implemented",
+				"Skill Set",
+				"Libraries and frameworks"
+			],
+			"links": [
+				[
+					"GitHub",
+					"logo-github",
+					"https://github.com/Vishinsky-Oleg/typescript-Tutorial"
+				],
+				[
+					"Link",
+					"link-outline",
+					"https://compassionate-williams-e79835.netlify.app"
+				]
+			],
+			"techUsed": [
+				"TypeScript",
+				"JS (ES6+)",
+				"Webpack",
+				"Git/GitHub",
+				"Chrome DEV Tools"
+			],
+			"techColors": [
+				"#1A6FB4",
+				"#EFD81D",
+				"#03b7d6",
+				"#DCA6C0",
+				"#6ECFAE"
+			],
+			"implemented": "Was created along with TypeScript course from Maximilian Schwarzmüller. Simple drag and drop application created on TypeScript and based on Class constructor. Base idea resemling React core features. User can create new project and drag and drop it with mouse between two boxes. In developments was used concepts like: Decorators, Generics, Typeguard, Advanced Types and typescript's class syntax.",
+			"skills": ["ES6+ syntax", "TypeScript", "Webpack"],
+			"libs": ["webpack"]
 		},
 		"4": {
 			"name": "'TODO' application",
