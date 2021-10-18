@@ -314,8 +314,8 @@
 	"mySkills": [
 		["JS: ", "Including ES6+ syntax, Promises (async/await), OOP"],
 		[
-			"TypeScript  ",
-			"[Basic Types, Advanced types, Class syntax, Decorators, Generics]"
+			"TypeScript: ",
+			"Basic Types, Advanced types, Class syntax, Decorators, Generics"
 		],
 		[
 			"CSS: ",

@@ -318,9 +318,9 @@
 		}
 	},
 	"mySkills": [
-        ["JS: ", "Включая ES6+, Promises (async/await), ООП"],
+		["JS: ", "Включая ES6+, Promises (async/await), ООП"],
 		[
-			"TypeScript  ",
+			"TypeScript: ",
 			"[Basic Types, Advanced types, Class syntax, Decorators, Generics]"
 		],
 		[
@@ -337,11 +337,14 @@
 		],
 		[
 			"Другие: ",
-			"Redux, Figma, Photoshop, Высокий уровень владения Английским (Достаточный для чтения профессиональной литературы и документации, таких ресурсов как MDN или W3School), Bootstap, Gulp, Webpack, Sass (включая: functions, iterators, mixins and variables), Parcel (замена для gulp в меньших проектах), BEM именная методология, работа со сторонними библиотекаи JS и Css, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (для незначительных проектов), Bootstrap-React, Firebase, Material UI"
+			"Redux, Figma, Photoshop, Высокий уровень владения Английским (Достаточный для чтения профессиональной литературы и документации, таких ресурсов как MDN или W3School), Bootstap, Gulp, Webpack, Sass (включая: functions, iterators, mixins and variables), Parcel (замена для gulp в меньших проектах), BEM именная методология, работа со сторонними библиотекаи JS и CSS, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (для незначительных проектов), Bootstrap-React, Firebase, Material UI"
 		],
 		["В меньшей степени: ", "Adobe XD, Adobe After Effects"],
 		["Базовые знания: ", "PHP, Python, SQL, CMS (Opencart, Wordpess)"],
-		["На данный момент изучаю: ", "Продвинутая разработка UI, Backend: Express"]
+		[
+			"На данный момент изучаю: ",
+			"Продвинутая разработка UI, Backend: Express"
+		]
 	],
 	"contacts": [
 		["Телефон: ", "+7 (926) 151-8353"],
