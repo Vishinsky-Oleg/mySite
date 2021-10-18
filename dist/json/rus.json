@@ -318,10 +318,14 @@
 		}
 	},
 	"mySkills": [
-		["JS: ", "Включая ES6+, RESTFul API, Promises (async/await), ООП"],
+        ["JS: ", "Включая ES6+, Promises (async/await), ООП"],
+		[
+			"TypeScript  ",
+			"[Basic Types, Advanced types, Class syntax, Decorators, Generics]"
+		],
 		[
 			"CSS: ",
-			"Animations, 2D transform, 3D transform, transitions; Кроссбраузерная/Адаптивная верстка, Pseudo Elements & Classes, @mediaqueries, webFonts, Flexbox, Grid"
+			"Preprossors (SASS), Animations, 2D transform, 3D transform, transitions; Кроссбраузерная/Адаптивная верстка, Pseudo Elements & Classes, @mediaqueries, webFonts, Flexbox, Grid"
 		],
 		[
 			"HTML: ",
@@ -329,15 +333,15 @@
 		],
 		[
 			"React: ",
-			"Hooks, Routes, Higher Order Components, Context, Lifecycle methods"
+			"Create React App (custom templates: typescript, typescript+redux), Hooks, Routes, Higher Order Components, Context, Lifecycle methods"
 		],
 		[
 			"Другие: ",
-			"Высокий уровень владения Английским (Достаточный для чтения профессиональной литературы и документации, таких ресурсов как MDN или W3School), Bootstap, Gulp, Webpack, Sass (включая: functions, iterators, mixins and variables), Parcel (замена для gulp в меньших проектах), BEM именная методология, работа со сторонними библиотекаи JS и Css, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (для незначительных проектов), Bootstrap-React, Firebase"
+			"Redux, Figma, Photoshop, Высокий уровень владения Английским (Достаточный для чтения профессиональной литературы и документации, таких ресурсов как MDN или W3School), Bootstap, Gulp, Webpack, Sass (включая: functions, iterators, mixins and variables), Parcel (замена для gulp в меньших проектах), BEM именная методология, работа со сторонними библиотекаи JS и Css, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (для незначительных проектов), Bootstrap-React, Firebase, Material UI"
 		],
-		["В меньшей степени: ", "PhotoShop, Adobe Xd, Figma"],
-		["Базовые знания: ", "PHP, Python, SQL, OpenCart CMS"],
-		["На данный момент изучаю: ", "Redux, Typescript"]
+		["В меньшей степени: ", "Adobe XD, Adobe After Effects"],
+		["Базовые знания: ", "PHP, Python, SQL, CMS (Opencart, Wordpess)"],
+		["На данный момент изучаю: ", "Продвинутая разработка UI, Backend: Express"]
 	],
 	"contacts": [
 		["Телефон: ", "+7 (926) 151-8353"],

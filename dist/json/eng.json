@@ -146,12 +146,12 @@
 			],
 			"implemented": "Was developed by: React course from Maximilian Schwarzmüller. Application built on class containers which considered legacy approach. Lets user create customly composed 'burger' and then checkout with simple form. Uses react-router-dom's link parameters to access composition of created burger. Axios creating each instance in firebase Db. Main point is to show skills with legacy lifecycle methods and clear and clean approach for creating small pieces of UI (each with own folder and css.module file). ",
 			"skills": [
-                "React Class Components",
-                "react-routed-dom API",
-                "requests to RestAPI Db (Firebase)",
+				"React Class Components",
+				"react-routed-dom API",
+				"requests to RestAPI Db (Firebase)",
 				"ES6+ syntax"
 			],
-			"libs": ["react","react-router-dom", "axios"]
+			"libs": ["react", "react-router-dom", "axios"]
 		},
 		"4": {
 			"name": "'TODO' application",
@@ -312,13 +312,14 @@
 		}
 	},
 	"mySkills": [
+		["JS: ", "Including ES6+ syntax, Promises (async/await), OOP"],
 		[
-			"JS: ",
-			"Including ES6 syntax, RESTFul API, Promises (async/await), OOP"
+			"TypeScript  ",
+			"[Basic Types, Advanced types, Class syntax, Decorators, Generics]"
 		],
 		[
 			"CSS: ",
-			"Animations, 2D transform, 3D transform, transitions; Crossbrowser/Adaptive layout, Pseudo Elements & Classes, @mediaqueries, webFonts, Flexbox, Grid"
+			"Preprossors (SASS), Animations, 2D transform, 3D transform, transitions; Crossbrowser/Adaptive layout, Pseudo Elements & Classes, @mediaqueries, Flexbox, Grid"
 		],
 		[
 			"HTML: ",
@@ -326,15 +327,15 @@
 		],
 		[
 			"React: ",
-			"Hooks, Routes, Higher Order Components, Context, Lifecycle methods"
+			"Create React App (custom templates: typescript, typescript+redux),Hooks, Routes, Higher Order Components, Context, Lifecycle methods"
 		],
 		[
 			"Other: ",
-			"High english level (enough for reading professional literature and documentation, like MDN or W3School), Bootstap, Gulp, Webpack,  Sass (incl: functions, iterators, mixins and variables), Parcel (replacement for gulp in smaller project), BEM naming convention, working with vendor JS and Css libraries, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools, FTP (FileZilla), Neflify (for small deploys), Bootstrap-React, Firebase"
+			"Redux, Figma, Photoshop, High english level (enough for reading professional literature and documentation, like MDN or W3School), Bootstap, Gulp, Webpack,  SASS (incl: functions, iterators, mixins and variables), Parcel (replacement for gulp in smaller project), BEM naming convention, working with vendor JS and CSS libraries, VSCode (emmet, shortcust, Git, console), npm, GitHub (commit, pull, push, merge,branch), Google Developer Tools (incl/ debugging), FTP (FileZilla), Neflify (for small deploys), Bootstrap-React, Firebase, Material UI"
 		],
-		["To a lesser extent: ", "PhotoShop, Adobe Xd, Figma"],
-		["Basic knowledge: ", "PHP, Python, SQL, OpenCart CMS"],
-		["Currently learning: ", "Redux, Typescript"]
+		["To a lesser extent: ", "Adobe XD, Adobe After Effects"],
+		["Basic knowledge: ", "PHP, Python, SQL, CMS (Opencart, Wordpess)"],
+		["Currently learning: ", "Advanced UI development, Backend: Express"]
 	],
 	"contacts": [
 		["Phone number: ", "+7 (926) 151-8353"],
