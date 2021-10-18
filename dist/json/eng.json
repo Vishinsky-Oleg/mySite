@@ -99,9 +99,59 @@
 				"#DCA6C0",
 				"#6ECFAE"
 			],
-			"implemented": "Was created along with TypeScript course from Maximilian Schwarzmüller. Simple drag and drop application created on TypeScript and based on Class constructor. Base idea resemling React core features. User can create new project and drag and drop it with mouse between two boxes. In developments was used concepts like: Decorators, Generics, Typeguard, Advanced Types and typescript's class syntax.",
-			"skills": ["ES6+ syntax", "TypeScript", "Webpack"],
+			"implemented": "Was developed by: TypeScript course from Maximilian Schwarzmüller. Simple drag and drop application created on TypeScript and based on Class constructor. Base idea resemling React core features. User can create new project and drag and drop it with mouse between two boxes. In developments was used concepts like: Decorators, Generics, Typeguard, Advanced Types and typescript's class syntax.",
+			"skills": [
+				"ES6+ syntax",
+				"TypeScript (Typeguard, Advanced types, Generics, Class Syntax, Decoratos)",
+				"Webpack"
+			],
 			"libs": ["webpack"]
+		},
+		"3": {
+			"name": "React Burger Builder",
+			"about": "React complex legacy application with Class Containers",
+			"imageName": "p3.jpg",
+			"sections": [
+				"Links",
+				"Technologies used",
+				"What was implemented",
+				"Skill Set",
+				"Libraries and frameworks"
+			],
+			"links": [
+				[
+					"GitHub",
+					"logo-github",
+					"https://github.com/Vishinsky-Oleg/Burger-Builder"
+				],
+				[
+					"Link",
+					"link-outline",
+					"https://goofy-meitner-6e0bea.netlify.app"
+				]
+			],
+			"techUsed": [
+				"React",
+				"JS (ES6+)",
+				"Create React App",
+				"Git/GitHub",
+				"Chrome DEV Tools"
+			],
+			"techColors": [
+				"#1A6FB4",
+				"#EFD81D",
+				"#1A6FB4",
+				"#DCA6C0",
+				"#6ECFAE"
+			],
+			"implemented": "Was developed by: React course from Maximilian Schwarzmüller. Application built on class containers which considered legacy approach. Lets user create customly composed 'burger' and then checkout with simple form. Uses react-router-dom's link parameters to access composition of created burger. Axios creating each instance in firebase Db. Main point is to show skills with legacy lifecycle methods and clear and clean approach for creating small pieces of UI (each with own folder and css.module file). ",
+			"skills": [
+                "React Class Components",
+                "react-routed-dom API",
+                "requests to RestAPI Db (Firebase)",
+				"ES6+ syntax"
+			],
+			"libs": ["react","react-router-dom", "axios"]
 		},
 		"4": {
 			"name": "'TODO' application",
