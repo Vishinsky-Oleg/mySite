@@ -321,7 +321,7 @@
 		["JS: ", "Включая ES6+, Promises (async/await), ООП"],
 		[
 			"TypeScript: ",
-			"[Basic Types, Advanced types, Class syntax, Decorators, Generics]"
+			"Basic Types, Advanced types, Class syntax, Decorators, Generics"
 		],
 		[
 			"CSS: ",
